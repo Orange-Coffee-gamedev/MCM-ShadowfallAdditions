@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "shadowfall-additions",
+	"version": "${version}",
+	"name": "Shadowfall-Additions",
+	"description": " A dark and immersive Minecraft mod bringing gritty medieval roleplay to life with new features, quests, and immersive gameplay enhancements!",
+	"authors": [
+		"SophieMakesMods"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/error"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/shadowfall-additions/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"smm.shadowfall.ShadowfallAdditions"
+		],
+		"client": [
+			"smm.shadowfall.ShadowfallAdditionsClient"
+		],
+		"fabric-datagen": [
+			"smm.shadowfall.ShadowfallAdditionsDataGenerator"
+		]
+	},
+	"mixins": [
+		"shadowfall-additions.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
